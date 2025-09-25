@@ -25,6 +25,7 @@ func healthCheck(w http.ResponseWriter, r *http.Request){
 
 func main() {
 	http.HandleFunc("/", backend1)
+	http.HandleFunc("/health",healthCheck)
 	http.HandleFunc("/metric1",metricsBackend1)
 	fmt.Println("Backend1 running on :8081")
 	http.ListenAndServe(":8081", nil)
