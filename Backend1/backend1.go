@@ -11,7 +11,8 @@ var count int
 func metricsBackend1(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, `{"requests": %d}`, count)
 }
-
+//testing comment
+//testing comment
 func backend1(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("backend1 got a request")
 	count++
