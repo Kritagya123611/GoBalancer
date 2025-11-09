@@ -101,6 +101,7 @@ func main() {
 // Setting up router with CORS
 //testing logs failure
 //test 2
+//test 3
 	router := chi.NewRouter()
 	router.Use(cors.Handler(cors.Options{
 		AllowedOrigins:   []string{"http://*", "https://*"},
