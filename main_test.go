@@ -5,6 +5,7 @@ import "testing"
 //test 2
 //test 3
 //test 4
+//test 5
 func TestForceFailure(t *testing.T) {
     t.Fatal("fail: Forced CI failure to test high severity")
 }
