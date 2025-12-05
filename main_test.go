@@ -7,5 +7,5 @@ import "testing"
 //test 4
 //test 5
 func TestForceFailure(t *testing.T) {
-    t.Fatal("fail: Forced CI failure to test high severity")
+    t.Fatal("Panic: Forced CI failure to test high severity")
 }
